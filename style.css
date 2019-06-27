@@ -1,0 +1,207 @@
+/* font-family: 'Aleo', serif;
+font-family: 'Josefin Sans', sans-serif;*/
+html {
+    font-size: 10px;
+}
+
+html, body, nav, h1, h2, h3, h4, h5, h6, p, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body * {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    border: 0;*/
+/*}*/
+
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* ### header ### */
+
+header {
+    min-height: 100vh; /*740px according to design*/
+    background-image: url(./images/bg-01.png);
+    background-size: cover;
+}
+
+.header-wrapper { /*740*/
+    margin: 0 auto;
+    max-width: 650px;
+    text-align: center;
+    padding-top: 30%; /*23*/
+
+}
+
+.logo span {
+    display: block;
+    font-size: 2.2rem;
+    color: #ffffff;
+    padding: 15px 0 45px;
+    text-rendering: geometricPrecision;
+}
+
+header div label {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    max-width: 650px;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+header div label > input {
+    width: 100%;
+    padding: 0 120px;
+    border: none;
+}
+
+header div label > input:focus {
+    outline: none;
+    color: #000000;
+}
+
+header div label > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5474fd;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Aleo', serif;
+    min-width: 146px;
+    height: 56px;
+    padding-left: 18px;
+}
+
+header div label > button > img {
+    width: 26px;
+    margin-left: 12px;
+}
+
+.header-wrapper > span {
+    display: block;
+    padding-top: 120px;
+}
+
+.arrow-down {
+    display: block;
+    margin: 0 auto;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    /*text-indent: -9999px;*/
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    /*transition: all 250ms ease-in-out;*/
+    text-decoration: none;
+    color: transparent;
+    transform: rotate(-135deg);
+}
+.arrow-down:before {
+    display: block;
+    height: 200%;
+    width: 200%;
+    margin-left: -50%;
+    margin-top: -50%;
+    content: "";
+    transform: rotate(45deg);
+}
+
+/* ### navigation bar ### */
+nav {
+    background-color: #5474fd;
+    padding: 30px 0;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a[href^="/"] {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a {
+    font-family: 'Aleo', serif;
+    margin-left: 40px;
+}
+
+/* ### main ### */
+h1 {
+    font-family: 'Aleo', serif;
+    font-size: 3.6rem;
+}
+
+/* why-us */
+.why-us {
+    background-image: url(./images/bg-02.png);
+    background-size: cover;
+}
+
+.why-us .container {
+    min-height: 688px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.why-us .container div {
+    max-width: 49%;
+}
+
+.why-us .container div h1 {
+    padding-bottom: 70px;
+}
+
+.why-us .container div p {
+    padding-bottom: 35px;
+}
+
+.why-us .container div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 225px;
+    min-height: 61px;
+    padding: 0 35px;
+    background-color: rgba(84, 116, 253, 0.85);
+    cursor: pointer;
+}
+
+.why-us .container div:last-child img:last-child {
+    padding-top: 2px;
+    padding-left: 25%;
+}
+
